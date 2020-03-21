@@ -1,0 +1,31 @@
+.ion-button {
+  padding: 5px;
+  margin: 10px;
+  cursor: pointer;
+  box-sizing: unset;
+}
+
+.ion-button:hover {
+  background-color: aquamarine;
+}
+
+.primary {
+  background-color: blue;
+}
+.primary:hover {
+  background-color: lightblue;
+}
+
+.danger {
+  background-color: red;
+}
+.danger:hover {
+  background-color: lightcoral;
+}
+
+.success {
+  background-color: green;
+}
+.success:hover {
+  background-color: lightgreen;
+}
