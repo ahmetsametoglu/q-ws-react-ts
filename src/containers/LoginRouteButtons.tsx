@@ -1,5 +1,5 @@
 import React from 'react';
-import IonButton from '../components/IonButton';
+import IonButton from '../components/IonButton/IonButton';
 import { useHistory } from 'react-router-dom';
 
 const LoginRouteButtons = () => {
