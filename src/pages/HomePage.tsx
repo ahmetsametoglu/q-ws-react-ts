@@ -1,10 +1,11 @@
 import React, { useState, Fragment, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
-import LoginRouteButtons from '../container/LoginRouteButtons';
+import LoginRouteButtons from '../containers/LoginRouteButtons';
+import ShowNotification from '../containers/ShowNotification';
 
 type State = { username?: string; password?: string };
-
-const HomePage = () => {
+type Prop = {};
+const HomePage = (props: Prop) => {
   const [state, setState] = useState<State>({});
   const history = useHistory();
 
@@ -39,6 +40,7 @@ const HomePage = () => {
       <button onClick={changeName}>degistir</button>
       <button onClick={goToLoginPage}>Go Login Page</button>
 
+      <ShowNotification />
       <LoginRouteButtons />
     </Fragment>
   );
