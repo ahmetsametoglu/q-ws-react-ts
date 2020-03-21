@@ -1,0 +1,33 @@
+.notification-container {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.notification {
+  border: solid red 1px;
+  height: 100px;
+  width: 250px;
+  padding: 5px;
+  margin: 5px;
+  color: whitesmoke;
+}
+
+.notification .title {
+  font-size: 18px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.notification .message {
+  font-size: 18px;
+  padding: 5px;
+}
+
+.notification.success {
+  background-color: green;
+}
+
+.notification.error {
+  background-color: maroon;
+}
