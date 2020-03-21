@@ -2,15 +2,15 @@ import './Notification.css';
 import React from 'react';
 import Notification from './Notification';
 import { INotification } from '../../api/models/notification';
-import { useSelector } from 'react-redux';
+import { useTypeSelector } from '../../redux/util/selector.helper';
 
 type Prop = {};
 const NotificationContainer = (props: Prop) => {
-  const appState: any = useSelector<any>(x => x.appState);
+  const { notificationList } = useTypeSelector(x => x.appState);
 
   return (
     <div className="notification-container">
-      {appState.notificationList.map((n: INotification) => {
+      {notificationList.map((n: INotification) => {
         return <Notification key={n.id} notification={n} />;
       })}
     </div>
